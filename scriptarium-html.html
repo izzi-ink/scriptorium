@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scriptarium Design System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="layout">
+        <!-- Mobile Navigation Toggle -->
+        <button id="mobile-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+            <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M3 6h18M3 18h18"/>
+            </svg>
+        </button>
+
+        <!-- Mobile Overlay -->
+        <div id="mobile-overlay" class="mobile-overlay"></div>
+
+        <!-- Sidebar Navigation -->
+        <nav id="sidebar" class="sidebar">
+            <div class="nav-title">Scriptarium</div>
+            
+            <div class="nav-section">
+                <div class="nav-section-title">Design Tokens</div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#colors" class="nav-link">Colors</a></li>
+                    <li class="nav-item"><a href="#typography" class="nav-link">Typography</a></li>
+                    <li class="nav-item"><a href="#spacing" class="nav-link">Spacing</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Components</div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#buttons" class="nav-link">Buttons</a></li>
+                    <li class="nav-item"><a href="#cards" class="nav-link">Cards</a></li>
+                    <li class="nav-item"><a href="#forms" class="nav-link">Forms</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Patterns</div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#navigation" class="nav-link">Navigation</a></li>
+                    <li class="nav-item"><a href="#layout" class="nav-link">Layout</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Documentation</div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#architecture" class="nav-link">Architecture</a></li>
+                    <li class="nav-item"><a href="#principles" class="nav-link">Principles</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Introduction -->
+            <section class="section">
+                <div class="section-header">
+                    <h1 class="section-title">Scriptarium Design System</h1>
+                    <p class="section-description">A systematic approach to interface design optimized for showcasing fantasy map illustrations and ink sketch artwork. Built with vanilla CSS, modern web standards, and atomic design principles.</p>
+                </div>
+            </section>
+
+            <!-- Colors Section -->
+            <section id="colors" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Colors</h2>
+                    <p class="section-description">A carefully curated palette designed to provide excellent contrast for black ink sketches while maintaining visual hierarchy and accessibility standards.</p>
+                </div>
+
+                <div class="color-grid">
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background-color: #ffffff;"></div>
+                        <div class="color-info">
+                            <div class="color-name">White</div>
+                            <div class="color-value">#ffffff</div>
+                        </div>
+                    </div>
+                    
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background-color: #fafafa;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Gray 50</div>
+                            <div class="color-value">#fafafa</div>
+                        </div>
+                    </div>
+                    
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background-color: #f5f5f5;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Gray 100</div>
+                            <div class="color-value">#f5f5f5</div>
+                        </div>
+                    </div>
+                    
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background-color: #eeeeee;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Gray 200</div>
+                            <div class="color-value">#eeeeee</div>
+                        </div>
+                    </div>
+                    
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background-color: #bdbdbd;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Gray 400</div>
+                            <div class="color-value">#bdbdbd</div>
+                        </div>
+                    </div>
+                    
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background-color: #757575;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Gray 600</div>
+                            <div class="color-value">#757575</div>
+                        </div>
+                    </div>
+                    
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background-color: #424242;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Gray 800</div>
+                            <div class="color-value">#424242</div>
+                        </div>
+                    </div>
+                    
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background-color: #212121;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Gray 900</div>
+                            <div class="color-value">#212121</div>
+                        </div>
+                    </div>
+                    
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background-color: #f4a261;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Accent Light</div>
+                            <div class="color-value">#f4a261</div>
+                        </div>
+                    </div>
+                    
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background-color: #e76f51;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Accent</div>
+                            <div class="color-value">#e76f51</div>
+                        </div>
+                    </div>
+                    
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background-color: #d62d20;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Accent Dark</div>
+                            <div class="color-value">#d62d20</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Typography Section -->
+            <section id="typography" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Typography</h2>
+                    <p class="section-description">System fonts with a clear hierarchy optimized for readability and maintaining the clean, professional aesthetic that complements hand-drawn illustrations.</p>
+                </div>
+
+                <div class="type-scale">
+                    <div class="type-example">
+                        <div class="type-label">12px / xs</div>
+                        <div class="type-sample" style="font-size: var(--text-xs);">The quick brown fox jumps over the lazy dog</div>
+                    </div>
+                    
+                    <div class="type-example">
+                        <div class="type-label">14px / sm</div>
+                        <div class="type-sample" style="font-size: var(--text-sm);">The quick brown fox jumps over the lazy dog</div>
+                    </div>
+                    
+                    <div class="type-example">
+                        <div class="type-label">16px / base</div>
+                        <div class="type-sample" style="font-size: var(--text-base);">The quick brown fox jumps over the lazy dog</div>
+                    </div>
+                    
+                    <div class="type-example">
+                        <div class="type-label">18px / lg</div>
+                        <div class="type-sample" style="font-size: var(--text-lg);">The quick brown fox jumps over the lazy dog</div>
+                    </div>
+                    
+                    <div class="type-example">
+                        <div class="type-label">20px / xl</div>
+                        <div class="type-sample" style="font-size: var(--text-xl);">The quick brown fox jumps over the lazy dog</div>
+                    </div>
+                    
+                    <div class="type-example">
+                        <div class="type-label">24px / 2xl</div>
+                        <div class="type-sample" style="font-size: var(--text-2xl);">The quick brown fox jumps over the lazy dog</div>
+                    </div>
+                    
+                    <div class="type-example">
+                        <div class="type-label">30px / 3xl</div>
+                        <div class="type-sample" style="font-size: var(--text-3xl);">The quick brown fox jumps</div>
+                    </div>
+                    
+                    <div class="type-example">
+                        <div class="type-label">36px / 4xl</div>
+                        <div class="type-sample" style="font-size: var(--text-4xl);">The quick brown fox</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Spacing Section -->
+            <section id="spacing" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Spacing</h2>
+                    <p class="section-description">A consistent spacing scale that creates visual rhythm and hierarchy throughout the interface.</p>
+                </div>
+
+                <div class="spacing-scale">
+                    <div class="spacing-example">
+                        <div class="spacing-label">4px / xs</div>
+                        <div class="spacing-visual" style="width: 4px;"></div>
+                    </div>
+                    
+                    <div class="spacing-example">
+                        <div class="spacing-label">8px / sm</div>
+                        <div class="spacing-visual" style="width: 8px;"></div>
+                    </div>
+                    
+                    <div class="spacing-example">
+                        <div class="spacing-label">16px / md</div>
+                        <div class="spacing-visual" style="width: 16px;"></div>
+                    </div>
+                    
+                    <div class="spacing-example">
+                        <div class="spacing-label">24px / lg</div>
+                        <div class="spacing-visual" style="width: 24px;"></div>
+                    </div>
+                    
+                    <div class="spacing-example">
+                        <div class="spacing-label">32px / xl</div>
+                        <div class="spacing-visual" style="width: 32px;"></div>
+                    </div>
+                    
+                    <div class="spacing-example">
+                        <div class="spacing-label">48px / 2xl</div>
+                        <div class="spacing-visual" style="width: 48px;"></div>
+                    </div>
+                    
+                    <div class="spacing-example">
+                        <div class="spacing-label">64px / 3xl</div>
+                        <div class="spacing-visual" style="width: 64px;"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Buttons Section -->
+            <section id="buttons" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Buttons</h2>
+                    <p class="section-description">Button components with clear visual hierarchy and consistent interaction patterns.</p>
+                </div>
+
+                <div class="component-grid">
+                    <div class="component">
+                        <div class="component-header">
+                            <h3 class="component-title">Button Variants</h3>
+                            <p class="component-description">Primary, secondary, and size variations</p>
+                        </div>
+                        <div class="component-demo">
+                            <button class="btn btn-primary">Primary Button</button>
+                            <button class="btn btn-secondary">Secondary Button</button>
+                            <br>
+                            <button class="btn btn-primary btn-sm">Small Button</button>
+                            <button class="btn btn-primary">Default Button</button>
+                            <button class="btn btn-primary btn-lg">Large Button</button>
+                        </div>
+                        <div class="component-code">
+&lt;button class="btn btn-primary"&gt;Primary Button&lt;/button&gt;
+&lt;button class="btn btn-secondary"&gt;Secondary Button&lt;/button&gt;
+&lt;button class="btn btn-primary btn-sm"&gt;Small Button&lt;/button&gt;
+&lt;button class="btn btn-primary btn-lg"&gt;Large Button&lt;/button&gt;
+                        </div>
+                    </div>
+
+                    <div class="component">
+                        <div class="component-header">
+                            <h3 class="component-title">Button States</h3>
+                            <p class="component-description">Different states for user interaction feedback</p>
+                        </div>
+                        <div class="component-demo">
+                            <button class="btn btn-primary">Normal</button>
+                            <button class="btn btn-primary" style="opacity: 0.6; cursor: not-allowed;" disabled>Disabled</button>
+                        </div>
+                        <div class="component-code">
+&lt;button class="btn btn-primary"&gt;Normal&lt;/button&gt;
+&lt;button class="btn btn-primary" disabled&gt;Disabled&lt;/button&gt;
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cards Section -->
+            <section id="cards" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Cards</h2>
+                    <p class="section-description">Card components for organizing and displaying content in digestible chunks.</p>
+                </div>
+
+                <div class="component-grid">
+                    <div class="component">
+                        <div class="component-header">
+                            <h3 class="component-title">Basic Card</h3>
+                            <p class="component-description">Simple card component with title and content</p>
+                        </div>
+                        <div class="component-demo">
+                            <div class="card">
+                                <h4 class="card-title">Fantasy Map Commission</h4>
+                                <div class="card-content">
+                                    <p>Create a custom fantasy map for your campaign world, complete with detailed terrain, cities, and mystical locations. Hand-drawn with traditional ink techniques.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component-code">
+&lt;div class="card"&gt;
+  &lt;h4 class="card-title"&gt;Fantasy Map Commission&lt;/h4&gt;
+  &lt;div class="card-content"&gt;
+    &lt;p&gt;Create a custom fantasy map for your campaign world...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Forms Section -->
+            <section id="forms" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Forms</h2>
+                    <p class="section-description">Form elements with consistent styling and clear usability patterns.</p>
+                </div>
+
+                <div class="component-grid">
+                    <div class="component">
+                        <div class="component-header">
+                            <h3 class="component-title">Form Elements</h3>
+                            <p class="component-description">Input fields, selects, and textareas</p>
+                        </div>
+                        <div class="component-demo">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Commission Title</label>
+                                <input class="form-input" type="text" id="name" placeholder="Enter map title">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="style">Map Style</label>
+                                <select class="form-select" id="style">
+                                    <option>Classic Fantasy</option>
+                                    <option>Medieval Parchment</option>
+                                    <option>Modern Cartographic</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="description">Project Description</label>
+                                <textarea class="form-textarea" id="description" placeholder="Describe your vision for the map..."></textarea>
+                            </div>
+                        </div>
+                        <div class="component-code">
+&lt;div class="form-group"&gt;
+  &lt;label class="form-label" for="name"&gt;Commission Title&lt;/label&gt;
+  &lt;input class="form-input" type="text" id="name"&gt;
+&lt;/div&gt;
+
+&lt;div class="form-group"&gt;
+  &lt;label class="form-label" for="style"&gt;Map Style&lt;/label&gt;
+  &lt;select class="form-select" id="style"&gt;
+    &lt;option&gt;Classic Fantasy&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;div class="form-group"&gt;
+  &lt;label class="form-label" for="description"&gt;Description&lt;/label&gt;
+  &lt;textarea class="form-textarea" id="description"&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation Section -->
+            <section id="navigation" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Navigation</h2>
+                    <p class="section-description">Navigation patterns for consistent wayfinding throughout the application.</p>
+                </div>
+
+                <div class="component-grid">
+                    <div class="component">
+                        <div class="component-header">
+                            <h3 class="component-title">Sidebar Navigation</h3>
+                            <p class="component-description">Left sidebar navigation with sections and active states</p>
+                        </div>
+                        <div class="component-demo">
+                            <div style="background: var(--color-surface); padding: var(--space-lg); border-radius: var(--border-radius); max-width: 240px;">
+                                <div class="nav-section">
+                                    <div class="nav-section-title">Portfolio</div>
+                                    <ul class="nav-list">
+                                        <li class="nav-item"><a href="#" class="nav-link active">Fantasy Maps</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">City Plans</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">World Maps</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-section">
+                                    <div class="nav-section-title">Services</div>
+                                    <ul class="nav-list">
+                                        <li class="nav-item"><a href="#" class="nav-link">Commissions</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Prints</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component-code">
+&lt;div class="nav-section"&gt;
+  &lt;div class="nav-section-title"&gt;Portfolio&lt;/div&gt;
+  &lt;ul class="nav-list"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a href="#" class="nav-link active"&gt;Fantasy Maps&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a href="#" class="nav-link"&gt;City Plans&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Layout Section -->
+            <section id="layout" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Layout</h2>
+                    <p class="section-description">Layout patterns and containers for organizing content and establishing visual hierarchy.</p>
+                </div>
+
+                <div class="component-grid">
+                    <div class="component">
+                        <div class="component-header">
+                            <h3 class="component-title">Section Layout</h3>
+                            <p class="component-description">Standard section with header and content area</p>
+                        </div>
+                        <div class="component-demo">
+                            <div style="border: 2px dashed var(--color-border); padding: var(--space-lg);">
+                                <div class="section-header">
+                                    <h3 class="section-title">Map Gallery</h3>
+                                    <p class="section-description">A collection of fantasy maps and illustrations showcasing different styles and techniques.</p>
+                                </div>
+                                <div style="background: var(--color-gray-100); padding: var(--space-lg); border-radius: var(--border-radius); text-align: center; color: var(--color-text-lighter);">
+                                    Content Area
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component-code">
+&lt;section class="section"&gt;
+  &lt;div class="section-header"&gt;
+    &lt;h2 class="section-title"&gt;Map Gallery&lt;/h2&gt;
+    &lt;p class="section-description"&gt;A collection of fantasy maps...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;!-- Content area --&gt;
+&lt;/section&gt;
+                        </div>
+                    </div>
+
+                    <div class="component">
+                        <div class="component-header">
+                            <h3 class="component-title">Component Grid</h3>
+                            <p class="component-description">Grid layout for organizing multiple components</p>
+                        </div>
+                        <div class="component-demo">
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--space-md);">
+                                <div style="background: var(--color-gray-100); padding: var(--space-md); border-radius: var(--border-radius); text-align: center; color: var(--color-text-lighter);">Item 1</div>
+                                <div style="background: var(--color-gray-100); padding: var(--space-md); border-radius: var(--border-radius); text-align: center; color: var(--color-text-lighter);">Item 2</div>
+                                <div style="background: var(--color-gray-100); padding: var(--space-md); border-radius: var(--border-radius); text-align: center; color: var(--color-text-lighter);">Item 3</div>
+                            </div>
+                        </div>
+                        <div class="component-code">
+&lt;div class="component-grid"&gt;
+  &lt;div class="component"&gt;...&lt;/div&gt;
+  &lt;div class="component"&gt;...&lt;/div&gt;
+  &lt;div class="component"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Architecture Section -->
+            <section id="architecture" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">CSS Architecture</h2>
+                    <p class="section-description">Technical implementation details showcasing modern CSS features and systematic approach to styling.</p>
+                </div>
+
+                <div class="component-grid">
+                    <div class="component">
+                        <div class="component-header">
+                            <h3 class="component-title">Cascade Layers</h3>
+                            <p class="component-description">Organized CSS architecture using cascade layers for predictable specificity</p>
+                        </div>
+                        <div class="component-demo">
+                            <div style="font-family: var(--font-mono); background: var(--color-gray-900); color: var(--color-gray-100); padding: var(--space-md); border-radius: var(--border-radius); font-size: var(--text-sm);">
+@layer reset, tokens, foundations, components, utilities;
+
+@layer tokens {
+  :root {
+    --color-accent: #e76f51;
+    --space-md: 16px;
+    --text-base: 16px;
+  }
+}
+
+@layer components {
+  .btn {
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-accent);
+  }
+}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="component">
+                        <div class="component-header">
+                            <h3 class="component-title">Design Tokens</h3>
+                            <p class="component-description">CSS custom properties for systematic design decisions</p>
+                        </div>
+                        <div class="component-demo">
+                            <div style="display: grid; gap: var(--space-sm); font-family: var(--font-mono); font-size: var(--text-sm);">
+                                <div><strong>Colors:</strong> --color-accent, --color-text, --color-background</div>
+                                <div><strong>Spacing:</strong> --space-xs, --space-sm, --space-md, --space-lg</div>
+                                <div><strong>Typography:</strong> --text-xs, --text-sm, --text-base, --text-lg</div>
+                                <div><strong>Layout:</strong> --max-width, --sidebar-width, --content-padding</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="component">
+                        <div class="component-header">
+                            <h3 class="component-title">Component API</h3>
+                            <p class="component-description">Systematic class naming for component variants and modifiers</p>
+                        </div>
+                        <div class="component-demo">
+                            <div style="font-family: var(--font-mono); font-size: var(--text-sm);">
+                                <div style="margin-bottom: var(--space-sm);"><strong>Base:</strong> .btn</div>
+                                <div style="margin-bottom: var(--space-sm);"><strong>Variants:</strong> .btn-primary, .btn-secondary</div>
+                                <div style="margin-bottom: var(--space-sm);"><strong>Sizes:</strong> .btn-sm, .btn-lg</div>
+                                <div><strong>States:</strong> :hover, :focus, :disabled</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Principles Section -->
+            <section id="principles" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Design Principles</h2>
+                    <p class="section-description">Core principles that guide design decisions and ensure consistency across the system.</p>
+                </div>
+
+                <div class="component-grid">
+                    <div class="component">
+                        <div class="component-header">
+                            <h3 class="component-title">Accessibility First</h3>
+                            <p class="component-description">Built with accessibility as a core requirement, not an afterthought</p>
+                        </div>
+                        <div class="component-demo">
+                            <ul style="margin: 0; padding-left: var(--space-lg);">
+                                <li>Mathematical spacing and typography scales</li>
+                                <li>Consistent color application and contrast</li>
+                                <li>Atomic design component organization</li>
+                                <li>Predictable naming conventions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="component">
+                        <div class="component-header">
+                            <h3 class="component-title">Context-Aware Design</h3>
+                            <p class="component-description">Optimized for showcasing artwork and maintaining focus</p>
+                        </div>
+                        <div class="component-demo">
+                            <ul style="margin: 0; padding-left: var(--space-lg);">
+                                <li>High contrast backgrounds for black ink art</li>
+                                <li>Minimal visual noise to highlight artwork</li>
+                                <li>Typography that complements hand-drawn elements</li>
+                                <li>Generous whitespace for visual breathing room</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Implementation Notes -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Implementation Notes</h2>
+                    <p class="section-description">Technical decisions and considerations for implementing this design system in production.</p>
+                </div>
+
+                <div class="component-grid">
+                    <div class="component">
+                        <div class="component-header">
+                            <h3 class="component-title">File Structure</h3>
+                            <p class="component-description">Recommended organization for scalable CSS architecture</p>
+                        </div>
+                        <div class="component-demo">
+                            <div style="font-family: var(--font-mono); font-size: var(--text-sm); background: var(--color-gray-50); padding: var(--space-md); border-radius: var(--border-radius);">
+design-system/<br>
+├── tokens/<br>
+│   ├── colors.css<br>
+│   ├── typography.css<br>
+│   └── spacing.css<br>
+├── foundations/<br>
+│   ├── reset.css<br>
+│   └── base.css<br>
+├── components/<br>
+│   ├── buttons.css<br>
+│   ├── cards.css<br>
+│   └── forms.css<br>
+└── utilities/<br>
+    └── helpers.css
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="component">
+                        <div class="component-header">
+                            <h3 class="component-title">Browser Support</h3>
+                            <p class="component-description">Modern CSS features with progressive enhancement</p>
+                        </div>
+                        <div class="component-demo">
+                            <ul style="margin: 0; padding-left: var(--space-lg);">
+                                <li><strong>CSS Custom Properties:</strong> IE 11+ (with fallbacks)</li>
+                                <li><strong>CSS Grid:</strong> All modern browsers</li>
+                                <li><strong>Cascade Layers:</strong> Chrome 99+, Firefox 97+</li>
+                                <li><strong>Container Queries:</strong> Chrome 105+, Firefox 110+</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="component">
+                        <div class="component-header">
+                            <h3 class="component-title">Performance Considerations</h3>
+                            <p class="component-description">Optimized for fast loading and smooth interactions</p>
+                        </div>
+                        <div class="component-demo">
+                            <ul style="margin: 0; padding-left: var(--space-lg);">
+                                <li>Minimal CSS bundle size (< 20KB compressed)</li>
+                                <li>No external font dependencies</li>
+                                <li>Efficient selector specificity</li>
+                                <li>Hardware-accelerated animations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer style="margin-top: var(--space-3xl); padding-top: var(--space-xl); border-top: var(--border-width) solid var(--color-border); text-align: center; color: var(--color-text-lighter);">
+                <p>Built with vanilla CSS, modern web standards, and systematic design thinking.</p>
+                <p style="font-size: var(--text-sm); margin-top: var(--space-sm);">Showcasing CSS cascade layers, design tokens, and atomic design methodology.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="scriptarium-js.js"></script>
+</body>
+</html>
